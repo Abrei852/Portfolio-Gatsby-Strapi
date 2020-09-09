@@ -11,7 +11,23 @@ export const FooterWrapper = styled.footer `
 
     @media ${props => props.theme.breakpoints.tablet}{
         grid-column: 2 / span 6;
-    }
+    }`
 
+    export const FooterSocialWrapper = styled.div `
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        text-align: center;
+    `
+    export const FooterSocialIcons = styled.div `
+
+    img{
+        height: 25px;
+        transition: filter 0.2s ease;
+        padding: 0 1rem;
+    }
+    img:hover{
+        filter: brightness(20%)
+    }
 
 `
