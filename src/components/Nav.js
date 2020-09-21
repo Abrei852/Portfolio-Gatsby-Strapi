@@ -1,15 +1,21 @@
 import React from "react"
-import { Link } from "gatsby"
+import { Link, useStaticQuery, graphql } from "gatsby"
 import { NavWrapper } from "../elements"
-import { FaBars } from 'react-icons/fa'
-
 
 export const Nav = () => {
+
+    const data = useStaticQuery(graphql`
+    query {
+      logo: file(relativePath: { eq: "logo.svg" }) {
+        publicURL
+      }
+    }
+  `)
 
     return (
         <NavWrapper>
             <Link to="/">
-                <FaBars size={30}/>
+            <img src={data.logo.publicURL} alt="My Logo" />
             </Link>
         </NavWrapper>
     )

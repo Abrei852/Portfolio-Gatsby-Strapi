@@ -18,6 +18,7 @@ export const FooterWrapper = styled.footer `
         flex-wrap: wrap;
         align-items: center;
         text-align: center;
+        margin: auto;
     `
     export const FooterSocialIcons = styled.div `
 

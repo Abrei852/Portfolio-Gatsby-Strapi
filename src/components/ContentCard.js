@@ -1,5 +1,5 @@
 import React from "react"
-import { CardWrapper, P, H1 } from "../elements"
+import { CardWrapper, P, H2 } from "../elements"
 import { Button } from "../components"
 import {FaHandPointRight, FaHandPointLeft} from "react-icons/fa"
 
@@ -12,15 +12,15 @@ export const ContentCard = ({ date, title, slug, excerpt }) => {
                 {date}
             </P>
 
-            <H1 size="medium">
+            <H2 size="medium">
                 {title}
-            </H1>
+            </H2>
 
             <P size="small" weight="normal" align="center">
                 {excerpt}
             </P>
             
-            <Button href={slug}> <FaHandPointRight size={16}/> {title} <FaHandPointLeft size={16}/></Button>
+            <Button href={slug}> <FaHandPointRight size={14} /> Read More <FaHandPointLeft size={14}/></Button>
 
         </CardWrapper>
     )

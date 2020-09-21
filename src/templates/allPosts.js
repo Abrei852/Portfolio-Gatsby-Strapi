@@ -38,13 +38,14 @@ const allPosts = ({ pageContext, data }) => {
                         slug={post.node.frontmatter.slug}
                     />
                 ))}
-            </Content>
+
             <Pagination 
                 isFirst = {isFirst}
                 isLast = {isLast}
                 prevPage = {prevPage}
                 nextPage = {nextPage}
             />
+          </Content>
         </Container>
     )
 }
