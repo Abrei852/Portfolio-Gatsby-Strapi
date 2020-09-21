@@ -1,11 +1,10 @@
 import styled from "styled-components"
 
 export const NavWrapper = styled.nav`
-    grid-column: 5 / span 5;
-    grid-row: 1;
+    grid-column: 4 / span 8;
+    grid-row: 1 / 2;
     display:flex;
     align-items: center;
-    background-color: purple;
     padding: 2rem;
 
     @media ${props => props.theme.breakpoints.tablet}{
@@ -14,6 +13,6 @@ export const NavWrapper = styled.nav`
 
     a{
         text-decoration: none;
-        color: white;
+        color: gray;
     }
 `

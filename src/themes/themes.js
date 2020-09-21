@@ -31,5 +31,26 @@ export default {
     },
     shadows: {
       shadow1: "0px 5px 20px rgba(30, 30, 31, 0.05)",
+      shadow2: "0px 5px 20px rgba(171, 166, 166, 1)",
     },
+    sizes: {
+      xsmall: "0.8rem",
+      small: "1.2rem",
+      medium: "1.7rem",
+      large: "2.2rem",
+    },
+    weights: {
+      normal: 350,
+      bold: 600,
+    },
+    align: {
+      left: "left",
+      center: "center",
+      right: "right",
+    },
+    heights: {
+      small: "1.5rem",
+      medium: "2rem",
+      large: "2.5rem",
+    }
   }
