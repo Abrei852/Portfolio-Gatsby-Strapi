@@ -21,7 +21,7 @@ const allPosts = ({ pageContext, data }) => {
     return(
         <Container>
             <Content>
-                <H1 size ="large">
+                <H1 size ="large" margin="0 0 1rem 0">
                 Elit rhoncus tellus proin parturient.
                  </H1>
                 <P size="medium" weight="normal" height="medium" align="center">
