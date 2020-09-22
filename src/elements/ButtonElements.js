@@ -18,4 +18,9 @@ text-decoration: none;
 &:focus {
   filter: brightness(120%);
 }
+
+@media ${props => props.theme.breakpoints.mobile}{
+  margin: inherit;
+  padding: 1rem;
+}
 `

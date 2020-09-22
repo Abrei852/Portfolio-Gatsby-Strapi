@@ -6,6 +6,16 @@
 
 module.exports = {
   /* Your site config here */
+  siteMetadata: {
+    title: "My MDX Blog",
+    description: "A simple blog built with Gatsby and MDX",
+    url: "https://your-site.netlify.app/",
+    image:
+      "https://frontend-magic.netlify.app/static/142900cccf67f74f52182a3914449904/37155/hero-img.png",
+    twitterUsername: "@rajahasware",
+    author: "Sohail Hasware",
+  },
+
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,
@@ -28,7 +38,18 @@ module.exports = {
         path: `${__dirname}/src/posts`,
       },
     },
-    `gatsby-plugin-sharp`,
+    {
+    resolve: `gatsby-plugin-sharp`,
+    options: {
+      // Available options and their defaults:
+      base64Width: 20,
+      forceBase64Format: ``, // valid formats: png,jpg,webp
+      useMozJpeg: process.env.GATSBY_JPEG_ENCODER === `MOZJPEG`,
+      stripMetadata: true,
+      defaultQuality: 100,
+      quality: 100,
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-styled-components`,
     {
@@ -40,6 +61,7 @@ module.exports = {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 1200,
+              quality: 100,
             },
           },
         ],

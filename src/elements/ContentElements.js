@@ -1,12 +1,14 @@
 import styled from "styled-components"
 
 export const ContentWrapper = styled.main`
-    grid-column: 3 / span 10;
-    grid-row: 3 / span 5;
-    box-shadow: ${props => props.theme.shadows.shadow1};
-    z-index: 2;
+    grid-column: 2 / span 12;
+    grid-row: 3 / span 6;
 
     @media ${props => props.theme.breakpoints.tablet} {
         grid-column: 2 / span 6;
+    }
+
+    @media ${props => props.theme.breakpoints.mobile} {
+        grid-column: 1 / span 8;
     }
 `

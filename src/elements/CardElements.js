@@ -6,6 +6,5 @@ export const CardWrapper = styled.div`
     display: flex;
     flex-direction: column;
     box-shadow: ${props => props.theme.shadows.shadow2};
-    width: 90%;
     
 `

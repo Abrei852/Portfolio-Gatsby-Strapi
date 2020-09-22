@@ -30,4 +30,20 @@ exports.createPages = async function ({ actions, graphql }) {
             },
         })
     })
+
+      // Create single blog posts
+  // For each edge in the query, create a new page
+  data.allMdx.edges.forEach(edge => {
+    /* take in the values from the query for slug and id and store
+them in slug and id const to be used in the createPage method
+for the singlePost.js */
+
+    const slug = edge.node.frontmatter.slug
+    const id = edge.node.id
+    actions.createPage({
+      path: slug,
+      component: require.resolve(`./src/templates/singlePost.js`),
+      context: { id },
+    })
+  })
 }

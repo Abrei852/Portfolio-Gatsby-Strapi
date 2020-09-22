@@ -29,6 +29,7 @@ export const Footer = () => {
                     <a href="https://instagram.com">
                         <img src={data.instagram.publicURL} alt="Instagram logo" />
                     </a>
+
                 </FooterSocialIcons>
             </FooterSocialWrapper>
         </FooterWrapper>
