@@ -3,13 +3,19 @@ import styled from "styled-components"
 export const NavWrapper = styled.nav`
     grid-column: 2 / span 12;
     grid-row: 1 / 2;
-    display:flex;
-    align-items: center;
-    
-    padding: 2rem;
+    padding: 3rem 0;
+    display: flex;
+    justify-content: space-between;
+
+    img {
+        height: 45px;
+    }
 
     @media ${props => props.theme.breakpoints.tablet}{
         grid-column: 2 / span 6;
+        img{
+            height: 30px;
+        }
         
     }
 
@@ -23,7 +29,4 @@ export const NavWrapper = styled.nav`
         color: gray;
     }
 
-    img {
-        height: 40px;
-    }
 `

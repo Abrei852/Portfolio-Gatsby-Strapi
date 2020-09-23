@@ -6,6 +6,7 @@ import{
     ContentCard,
     Pagination,
     FeatureImage,
+    NavMenu
 } from "../components"
 
 import { H1, P } from "../elements"
@@ -22,6 +23,7 @@ const allPosts = ({ pageContext, data }) => {
     return(
         <Container>
           <FeatureImage />
+          <NavMenu />
             <Content>
                 <H1 size ="large" margin="0 0 1rem 0">
                 Elit rhoncus tellus proin parturient.

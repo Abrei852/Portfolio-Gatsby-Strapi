@@ -11,10 +11,10 @@ const singlePost = ({ data }) => {
 
   return (
     <Container>
-      <Seo 
-      title={data.mdx.frontmatter.title}
-      image={seoImage}
-      description={data.mdx.frontmatter.excerpt}
+      <Seo
+        title={data.mdx.frontmatter.title}
+        image={seoImage}
+        description={data.mdx.frontmatter.excerpt}
       />
       <FeatureImage fixed={featureImage} />
       <Post>

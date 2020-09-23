@@ -98,7 +98,7 @@ export const P = styled.p`
 
     /* Switch statement for text align */
     text-align: ${props => {
-        switch(props.align){
+        switch(props.align) {
 
             case "left":
                 return props.theme.align.left

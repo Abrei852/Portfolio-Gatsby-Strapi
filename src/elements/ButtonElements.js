@@ -19,7 +19,7 @@ text-decoration: none;
   filter: brightness(120%);
 }
 
-@media ${props => props.theme.breakpoints.mobile}{
+@media ${props => props.theme.breakpoints.tablet}{
   margin: inherit;
   padding: 1rem;
 }
