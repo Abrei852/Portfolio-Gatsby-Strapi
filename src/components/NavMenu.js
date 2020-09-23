@@ -1,11 +1,11 @@
 import React from "react"
 import { Ul, Li,  NavListWrapper} from "../elements"
 
-export const NavMenu = () => {
+export const NavMenu = ({open}) => {
 
     return(
         <NavListWrapper>
-            <Ul>
+            <Ul open={open}>
 
                 <Li>
                     <a href="#">Home</a>

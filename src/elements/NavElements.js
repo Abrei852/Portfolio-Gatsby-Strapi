@@ -4,11 +4,10 @@ export const NavWrapper = styled.nav`
     grid-column: 2 / span 12;
     grid-row: 1 / 2;
     padding: 3rem 0;
-    display: flex;
-    justify-content: space-between;
 
     img {
         height: 45px;
+        margin: auto 0;
     }
 
     @media ${props => props.theme.breakpoints.tablet}{
@@ -20,13 +19,18 @@ export const NavWrapper = styled.nav`
     }
 
     @media ${props => props.theme.breakpoints.mobile} {
-        grid-column: 1 / span 8;
-        margin: auto;
+        grid-column: 2 / span 6;
+        justify-content: end;
+        img{
+            margin: 0;
+        }
     }
 
     a{
         text-decoration: none;
         color: gray;
+        display: flex;
+        justify-content: space-between;
     }
 
 `

@@ -2,7 +2,6 @@ import styled from "styled-components"
 
 export const FooterWrapper = styled.footer `
     grid-column: 2 / span 12;
-    grid-row: 10;
     min-height: 11.25rem;
     padding: 3rem 0;
     display: flex;
@@ -29,7 +28,7 @@ export const FooterWrapper = styled.footer `
         padding: 0 1rem;
     }
     img:hover{
-        filter: brightness(20%)
+        filter: brightness(10%)
     }
 
 `
