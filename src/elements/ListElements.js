@@ -5,7 +5,7 @@ export const Ul = styled.ul`
     flex-flow: row nowrap;
     list-style: none;
 
-    @media ${props => props.theme.breakpoints.mobile}{
+    @media ${props => props.theme.breakpoints.tablet}{
         flex-flow: column nowrap;
         margin: 0;
         position: fixed;

@@ -17,6 +17,8 @@ export const NavListWrapper = styled.div `
     }
 
     @media ${props => props.theme.breakpoints.tablet} {
-        margin: 0;
+        a{
+            font-size: 1.2rem;
+        }
     }
 `

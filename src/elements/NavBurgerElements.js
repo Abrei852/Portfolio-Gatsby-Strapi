@@ -4,16 +4,20 @@ export const NavBurgerWrapper = styled.div `
     width: 2rem;
     height: 2rem;
     position: fixed;
-    right: 56px;
     display:none;
-    width: 2rem;
-    height: 0,25rem;
     z-index: 20;
+    overflow: hidden;
+    cursor: pointer;
 
-    @media ${props => props.theme.breakpoints.mobile}{
+    @media ${props => props.theme.breakpoints.tablet}{
         display: flex;
         justify-content: space-around;
         flex-flow: column nowrap;
+        right: 63px;
+    }
+
+    @media ${props => props.theme.breakpoints.mobile} {
+        right: 56px;
     }
 
     a{
@@ -22,4 +26,5 @@ export const NavBurgerWrapper = styled.div `
         display: flex;
         justify-content: space-between;
     }
+
 `
