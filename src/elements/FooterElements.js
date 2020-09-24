@@ -17,20 +17,26 @@ export const FooterWrapper = styled.footer `
     export const FooterSocialWrapper = styled.div `
         display: flex;
         flex-wrap: wrap;
-        align-items: center;
-        text-align: center;
         margin: auto;
     `
     export const FooterSocialIcons = styled.div `
 
-    img{
+    a{
         height: 25px;
-        transition: filter 0.2s ease;
+        transition: filter 0.1s ease;
         padding: 0 1rem;
-        color: purple;
+        color: white;
+
     }
-    img:hover{
-        filter: brightness(10%)
+    a:hover{
+        filter: brightness(40%)
+    }
+
+    p{
+        color: white;
+        font-size: 1.3rem;
+        text-align: center;
+        padding: 1rem;
     }
 
 `

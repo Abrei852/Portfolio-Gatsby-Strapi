@@ -1,6 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import {FooterWrapper, FooterSocialWrapper, FooterSocialIcons} from "../../elements"
+import {FaFacebook, FaInstagram, FaLinkedinIn} from "react-icons/fa"
 
 export const Footer = () => {
     const data = useStaticQuery(graphql`
@@ -20,14 +21,15 @@ export const Footer = () => {
         <FooterWrapper>
             <FooterSocialWrapper>
                 <FooterSocialIcons>
+                    <p>Follow me</p>
                     <a href="https://facebook.com">
-                        <img src={data.facebook.publicURL} alt="Facebook logo" />
+                        <FaFacebook size={30} alt="FaceBook logo"/>
                     </a>                    
                     <a href="https://se.linkedin.com">
-                        <img src={data.linkedin.publicURL} alt="Linkedin logo" />
+                        <FaLinkedinIn size={30} alt="Linkedin logo"/>
                     </a>
                     <a href="https://instagram.com">
-                        <img src={data.instagram.publicURL} alt="Instagram logo" />
+                        <FaInstagram size={30} alt="Instagram logo"/>
                     </a>
 
                 </FooterSocialIcons>
