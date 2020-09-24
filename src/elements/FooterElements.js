@@ -7,9 +7,10 @@ export const FooterWrapper = styled.footer `
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    background-color: ${props => props.theme.colors.main1};
 
     @media ${props => props.theme.breakpoints.tablet}{
-        grid-column: 2 / span 6;
+        grid-column: 1 / span 8;
         
     }`
 
@@ -26,6 +27,7 @@ export const FooterWrapper = styled.footer `
         height: 25px;
         transition: filter 0.2s ease;
         padding: 0 1rem;
+        color: purple;
     }
     img:hover{
         filter: brightness(10%)

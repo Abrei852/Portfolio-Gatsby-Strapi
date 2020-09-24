@@ -15,9 +15,8 @@ transition: filter 0.3s ease;
 text-decoration: none;
 margin: inherit;
 
-
 &:hover,
 &:focus {
-  filter: brightness(120%);
+  filter: brightness(70%);
 }
 `

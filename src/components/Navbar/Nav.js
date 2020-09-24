@@ -1,7 +1,7 @@
 import React from "react"
 import { Link, useStaticQuery, graphql } from "gatsby"
-import { NavWrapper } from "../elements"
-import { BurgerMenu } from "../components"
+import { NavWrapper } from "../../elements"
+import { BurgerMenu } from "../../components"
 
 export const Nav = () => {
 

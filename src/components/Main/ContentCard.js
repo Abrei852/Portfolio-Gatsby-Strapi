@@ -1,6 +1,6 @@
 import React from "react"
-import { CardWrapper, P, H2 } from "../elements"
-import { Button } from "../components"
+import { CardWrapper, P, H2 } from "../../elements"
+import { Button } from "../../components"
 import {FaHandPointRight, FaHandPointLeft} from "react-icons/fa"
 
 

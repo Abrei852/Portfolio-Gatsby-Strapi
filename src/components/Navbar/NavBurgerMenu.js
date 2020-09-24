@@ -1,6 +1,6 @@
 import React, {useState} from "react"
-import { NavBurgerWrapper } from "../elements"
-import { NavMenu } from "../components"
+import { NavBurgerWrapper } from "../../elements"
+import { NavMenu } from "../../components"
 import {FaBars} from "react-icons/fa"
 
 

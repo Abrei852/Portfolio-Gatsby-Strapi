@@ -12,6 +12,6 @@ export const FeatureImageWrapper = styled.div`
   }
 
   @media ${props => props.theme.breakpoints.mobile} {
-      grid-columns: 1 / span 8;
+      grid-columns: 3 / span 8;
   }
 `

@@ -1,24 +1,30 @@
 import styled from "styled-components"
 
 export const NavListWrapper = styled.div `
-    grid-column: 2 / span 12;
-    grid-row: 3;
 
-    a{
-        text-decoration: none;
-        font-size: 1.4rem;
+    ul{
+        display: flex;
+        flex-flow: row nowrap;
+        list-style: none;
     }
 
-    li:hover{
-        background-color: ${props => props.theme.colors.main1};
-        a{
-            color: white;
-        }
+    li{
+        padding: 20px 2rem;
     }
 
-    @media ${props => props.theme.breakpoints.tablet} {
-        a{
-            font-size: 1.2rem;
+    @media ${props => props.theme.breakpoints.tablet}{
+        ul{
+            flex-flow: column nowrap;
+            margin: 0;
+            position: fixed;
+            transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(100%)'};
+            transition: transform 0.3s;
+            top: 0;
+            right: 0;
+            height: 100vh;
+            z-index: 10;
+            background-color: white;
+            padding-top: 6rem;
         }
     }
 `
