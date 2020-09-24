@@ -13,5 +13,5 @@ export * from "./Main/ContentCard"
 export * from "./Main/Pagination"
 
 export * from "./Navbar/Nav"
-export * from "./Navbar/NavMenu"
 export * from "./Navbar/NavBurgerMenu"
+export * from "./Navbar/NavMenu"
