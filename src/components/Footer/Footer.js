@@ -8,13 +8,13 @@ export const Footer = () => {
             <FooterSocialWrapper>
                 <FooterSocialIcons>
                     <p>Follow me</p>
-                    <a href="https://facebook.com">
+                    <a href="https://www.facebook.com/abraham.eishow">
                         <FaFacebook size={30} alt="FaceBook logo"/>
                     </a>                    
-                    <a href="https://se.linkedin.com">
+                    <a href="https://se.linkedin.com/in/abraham-eishow-218b77199">
                         <FaLinkedinIn size={30} alt="Linkedin logo"/>
                     </a>
-                    <a href="https://instagram.com">
+                    <a href="https://instagram.com/abbe1334">
                         <FaInstagram size={30} alt="Instagram logo"/>
                     </a>
 

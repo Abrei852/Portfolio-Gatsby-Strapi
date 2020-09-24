@@ -12,8 +12,8 @@ module.exports = {
     url: "https://your-site.netlify.app/",
     image:
       "https://frontend-magic.netlify.app/static/142900cccf67f74f52182a3914449904/37155/hero-img.png",
-    twitterUsername: "@rajahasware",
-    author: "Sohail Hasware",
+    twitterUsername: "@abrahameishow",
+    author: "Abraham Eishow",
   },
 
   plugins: [
