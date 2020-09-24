@@ -26,7 +26,7 @@ const allPosts = ({ pageContext, data }) => {
                 <H1 size ="large" margin="0 0 1rem 0">
                 Elit rhoncus tellus proin parturient.
                  </H1>
-                <P size="medium" weight="normal" height="medium" align="center">
+                <P size="small" weight="normal" height="medium" align="center">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing
                 volutpat risus quis lorem pulvinar et pulvinar sit dictum. Eget orci,
                 orci in congue cursus nulla tincidunt facilisi.

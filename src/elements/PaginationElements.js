@@ -31,7 +31,7 @@ export const PaginationElement = styled(props => <Link {...props} />)`
   line-height: 1.125rem;
   font-weight: 400;
   text-decoration: none;
-  margin: 0 6rem;
+  margin: 0 4rem;
 
   &:hover,
   &:focus {

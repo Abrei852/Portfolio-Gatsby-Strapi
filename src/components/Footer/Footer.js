@@ -1,22 +1,8 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
 import {FooterWrapper, FooterSocialWrapper, FooterSocialIcons} from "../../elements"
 import {FaFacebook, FaInstagram, FaLinkedinIn} from "react-icons/fa"
 
 export const Footer = () => {
-    const data = useStaticQuery(graphql`
-    query {
-        facebook: file(relativePath: {eq: "facebook.svg"}) {
-          publicURL
-        }
-        linkedin: file(relativePath: {eq: "linkedin.svg"}) {
-          publicURL
-          }
-        instagram: file(relativePath: {eq: "instagram.svg"}) {
-          publicURL
-        }
-      }
-    `)
     return(
         <FooterWrapper>
             <FooterSocialWrapper>

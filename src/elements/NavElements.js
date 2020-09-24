@@ -1,14 +1,13 @@
 import styled from "styled-components"
 
 export const NavWrapper = styled.nav`
-    grid-column: 2 / span 12;
+    grid-column: 1 / span 14;
     grid-row: 1 / 2;
     padding: 2.5rem 0;
     border-bottom: 1px solid silver;
 
     img {
         height: 40px;
-        
     }
 
     a{
@@ -18,6 +17,11 @@ export const NavWrapper = styled.nav`
         justify-content: space-between;
         text-decoration: none;
         font-size: 1.4rem;
+        margin-left: 20px;
+    }
+
+    li{
+        cursor: pointer;
     }
 
     li:hover{
@@ -39,11 +43,5 @@ export const NavWrapper = styled.nav`
             width: 83%;
             margin: auto;
         }
-    }
-
-    @media ${props => props.theme.breakpoints.mobile} {
-        grid-column: 1 / span 8;
-
-
     }
 `

@@ -23,6 +23,10 @@ export const H1 = styled.h1`
 
         }
     }};
+
+    @media ${props => props.theme.breakpoints.mobile} {
+        font-size: 1.5rem;
+    }
 `
 
 //Styling for the h2 tag
@@ -111,6 +115,7 @@ export const P = styled.p`
 
         }
     }};
+
 `
 
 

@@ -2,6 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import { Link } from "gatsby"
 
+//Styling for the button
 export const ButtonWrapper = styled(props => <Link {...props} />) `
 margin: auto;
 padding: 1rem;

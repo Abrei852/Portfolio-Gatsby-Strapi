@@ -8,19 +8,19 @@ export const NavMenu = ({open}) => {
             <ul>
 
                 <li>
-                    <a href="#">Home</a>
+                    <a href="/#">Home</a>
                 </li>
 
                 <li>
-                    <a href="#">About me</a>
+                    <a href="/#">About me</a>
                 </li>
 
                 <li>
-                    <a href="#">Links</a>
+                    <a href="/#">Links</a>
                 </li>
 
                 <li>
-                    <a href="#">Projects</a>
+                    <a href="/#">Projects</a>
                 </li>
 
             </ul>
