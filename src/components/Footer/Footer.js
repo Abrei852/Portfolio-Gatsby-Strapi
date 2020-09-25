@@ -2,8 +2,14 @@ import React from "react"
 import {FooterWrapper, FooterSocialWrapper, FooterSocialIcons} from "../../elements"
 import {FaFacebook, FaInstagram, FaLinkedinIn} from "react-icons/fa"
 
+//The footer component which uses the footerwrapper, the socialwrapper and socialicons. 
+//Icons imported from font awesome
 export const Footer = () => {
+
+    //Returns the footerwrapper with the elements inside as children
     return(
+
+        //The footer wrapper and all its children, with the icons
         <FooterWrapper>
             <FooterSocialWrapper>
                 <FooterSocialIcons>

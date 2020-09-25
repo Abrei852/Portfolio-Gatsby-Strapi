@@ -10,7 +10,7 @@ export const ContainerWrapper = styled.div`
     gap: 2rem;
     background-color: white;
 
-
+    /*Breakpoint for tablet, it changes the total columns */
     @media ${props => props.theme.breakpoints.tablet}{
         grid-template-columns: 2rem repeat(6, 1fr) 2rem;
     }

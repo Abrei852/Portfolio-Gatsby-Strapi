@@ -3,7 +3,10 @@ import Img from "gatsby-image"
 import { useStaticQuery, graphql } from "gatsby"
 import { FeatureImageWrapper } from "../elements"
 
+//The component for the featureImage, takes fixed data as parameter
 export const FeatureImage = ({ fixed }) => {
+
+  //The query data which defines the image and uses the ImageShapr module
   const data = useStaticQuery(graphql`
     query {
       imageSharp(fixed: { originalName: { eq: "viggen.jpg" } }) {
@@ -14,6 +17,7 @@ export const FeatureImage = ({ fixed }) => {
     }
   `)
 
+  //Returns the FeatureImage wrapper.
   return (
     <FeatureImageWrapper>
       <Img

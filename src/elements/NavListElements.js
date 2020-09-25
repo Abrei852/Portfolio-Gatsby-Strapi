@@ -1,5 +1,6 @@
 import styled from "styled-components"
 
+//Styling for the list elements in the navigation
 export const NavListWrapper = styled.div `
 
     ul{
@@ -12,6 +13,7 @@ export const NavListWrapper = styled.div `
         padding: 20px 2rem;
     }
 
+    /*Breakpoint for tablets makes it suitible for burger styled menu*/
     @media ${props => props.theme.breakpoints.tablet}{
         ul{
             flex-flow: column nowrap;

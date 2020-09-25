@@ -1,5 +1,6 @@
 import styled from "styled-components"
 
+//Styling for the burger menu
 export const NavBurgerWrapper = styled.div `
     width: 2rem;
     height: 2rem;
@@ -8,6 +9,7 @@ export const NavBurgerWrapper = styled.div `
     overflow: hidden;
     cursor: pointer;
 
+    /*Styling for tablets */
     @media ${props => props.theme.breakpoints.tablet}{
         display: flex;
         justify-content: space-around;

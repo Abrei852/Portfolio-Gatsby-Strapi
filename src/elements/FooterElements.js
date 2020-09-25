@@ -1,5 +1,6 @@
 import styled from "styled-components"
 
+//styling for the footer
 export const FooterWrapper = styled.footer `
     grid-column: 1 / span 14;
     min-height: 11.25rem;
@@ -8,6 +9,7 @@ export const FooterWrapper = styled.footer `
     justify-content: center;
     background-color: ${props => props.theme.colors.main1};
 
+    /*Breakpoint for tablets */
     @media ${props => props.theme.breakpoints.tablet}{
         grid-column: 1 / span 8;
         

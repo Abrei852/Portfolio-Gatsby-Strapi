@@ -2,7 +2,10 @@ import React from "react"
 import Highlight, { defaultProps } from "prism-react-renderer"
 import theme from "prism-react-renderer/themes/vsDark"
 
+//The Component for the code design in posts
 export const Code = ({ codeString, language, ...props }) => {
+
+  //Returns the highlight and the data and uses it to style the tags used for different codes
   return (
     <Highlight
       {...defaultProps}

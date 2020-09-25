@@ -2,8 +2,9 @@ import React from "react"
 import { Helmet } from "react-helmet"
 import { StaticQuery, graphql } from "gatsby"
 
+//The component for the seo used for optimizing search engine.
 export const Seo = ({ description, keywords, title, image, url, author }) => {
-  const site = "yoururl.netlify.app"
+  const site = "https://blog-abraham-eishow.netlify.app/"
 
   return (
     <StaticQuery

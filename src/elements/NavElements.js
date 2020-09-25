@@ -1,5 +1,6 @@
 import styled from "styled-components"
 
+//Styling for the navigation
 export const NavWrapper = styled.nav`
     grid-column: 1 / span 14;
     grid-row: 1 / 2;
@@ -31,6 +32,7 @@ export const NavWrapper = styled.nav`
         }
     }
 
+    /*Breakpoint for tablets */
     @media ${props => props.theme.breakpoints.tablet}{
 
         grid-column: 1 / span 8;
