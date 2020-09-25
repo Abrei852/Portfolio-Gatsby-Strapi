@@ -97,3 +97,42 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/gatsbyjs/gatsby-starter-hello-world)
 
 <!-- AUTO-GENERATED-CONTENT:END -->
+
+Hemtentamen uppgift
+- Se samband och värdera alternativa lösningar vid val av programmeringsteknink av dynamiska webbplatser.
+
+Dynamiska vs Statiska sidor
+
+Dynamiska webbsidor innebär att innehållet förändras kontinuerligt och att det visuellt är olika för olika användare. Man använder sig av dynamiska webbsidor när informationen frekvent ska förändras. (Geeksforgeeks, 2020)
+
+Statiska webbsidor innebär att innehållet är hårdkodat, när man ska göra en förändring och när det väl görs en förändring måste filen laddas upp på nytt i webbservern.(Zesty, )
+
+HTML vs PUG
+
+Statiska webbsidor görs i html filer, informationen som visas kan inte anpassas om det inte görs om manuellt. 
+PUG är en mall för html, det PUG gör är att kompilera all kod och göra den till läsbar HTML som webbläsaren kan läsa av. 
+Den största skillnaden mellan HTML och PUG är återanvändingen av kod, det kan förenkla betydligt mycket mer än att skriva rad för rad i HTML. Man kommer in i ett komponent tänk, man skapar en komponent som kan återanvändas istället för att repetera samma kod om och om igen. En annan skillnad är att PUG också kan visa dynamisk data genom html vilket innebär att den kan visa upp datat hämtat från ett API. (Sitepoint, 2019)
+
+GATSBY vs PUG
+
+Gatsby har ett väldigt effektivt plugin system, där man kan plugin för att lägga till suddiga effekter på en bild eller implementera egen styling med Styled Components. Med Gatsby kan man även använda sig av GraphQl, ett query verktyg som ger klienten exakt det som efterfrågas och inget mer. Gatsby är populärt för att skapa bloggar.(LogRocket, 2019)
+
+Med Pug skapar man en extern css fil där man designar sidan, till skillnad som nämnt ovan att skapa en themes fil där man i vilken komponent som helst importerar det man är ute efter, snarliknande bootstrap fast bättre. Pug passar oftast bra till statiska sidor som ska importera dynamisk data, från t.ex en sql databas eller api:er. (Medium, 2018)
+
+KÄLLOR
+
+(GEEKSFORGEEKS): https://www.geeksforgeeks.org/difference-between-static-and-dynamic-web-pages/
+
+(ZESTY): https://www.zesty.io/mindshare/marketing-technology/dynamic-vs-static-websites/
+
+(LOGROCKET): https://blog.logrocket.com/is-gatsby-really-that-great-e7b19c4c1c05/
+
+(MEDIUM): https://medium.com/jspoint/pug-js-to-make-your-life-easier-with-html-templates-9c62273626e0
+
+
+
+
+
+
+
+
