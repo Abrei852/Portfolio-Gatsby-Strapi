@@ -5,11 +5,13 @@ import { H1 } from "../elements"
 import { Container, Post, FeatureImage, Seo } from "../components"
 import { FaArrowLeft} from "react-icons/fa"
 
+//Single post page and the parameter data
 const singlePost = ({ data }) => {
   const featureImage = data.mdx.frontmatter.featureImage.childImageSharp.fixed
 
   const seoImage = data.mdx.frontmatter.featureImage.publicURL
 
+  //Returns the container component and the children defined within the tags
   return (
     <Container>
       <Seo
@@ -29,6 +31,7 @@ const singlePost = ({ data }) => {
 
 export default singlePost
 
+//Uses query to grab info of which it will display on tha page
 export const pageQuery = graphql`
   query SinglePostQuery($id: String!) {
     mdx(id: { eq: $id }) {

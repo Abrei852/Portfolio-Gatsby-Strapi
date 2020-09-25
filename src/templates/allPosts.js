@@ -20,6 +20,7 @@ const allPosts = ({ pageContext, data }) => {
 
     const posts = data.allMdx.edges
 
+    //Returns the container component and the children defined within the tags
     return(
         <Container>
           <FeatureImage />
@@ -55,6 +56,7 @@ const allPosts = ({ pageContext, data }) => {
 
 export default allPosts
 
+//Uses query to grab info of which it will display on tha page
 export const pageQuery = graphql`
 query AllPostsQuery($skip: Int!, $limit: Int!) {
     allMdx(
