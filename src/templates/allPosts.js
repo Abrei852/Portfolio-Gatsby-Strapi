@@ -10,6 +10,7 @@ import{
 
 import { H1, P } from "../elements"
 
+//The allposts page and parameters pagecontext and data
 const allPosts = ({ pageContext, data }) => {
     const { currentPage, numPages } = pageContext
     const isFirst = currentPage === 1

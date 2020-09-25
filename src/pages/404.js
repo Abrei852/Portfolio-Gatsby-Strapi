@@ -3,9 +3,11 @@ import { graphql } from "gatsby"
 import { Container, Content, FeatureImage } from "../components"
 import { H1 } from "../elements"
 
+//The 404 Page, takes parameter data
 const notFound = ({ data }) => {
   const featureImage = data.imageSharp.fixed
 
+  //Returns Container component and the children defined within the tag
   return (
     <Container>
       <FeatureImage fixed={featureImage} />
@@ -20,6 +22,7 @@ const notFound = ({ data }) => {
 
 export default notFound
 
+//Uses query to define the image path
 export const notFoundQuery = graphql`
   query NotFoundQuery {
     imageSharp(fixed: { originalName: { eq: "sad-cat.jpg" } }) {
