@@ -16,7 +16,7 @@ _Have another more specific idea? You may want to check out our vibrant collecti
 
 1.  **Create a Gatsby site.**
 
-    Use the Gatsby CLI to create a new site, specifying the hello-world starter.
+    Use the Gatsby CLI to create a new site, specifying the hello-world starter. You need to have gatsby and react installed for this to work.
 
     ```shell
     # create a new Gatsby site using the hello-world starter
@@ -25,10 +25,22 @@ _Have another more specific idea? You may want to check out our vibrant collecti
 
 1.  **Start developing.**
 
-    Navigate into your new site’s directory and start it up.
+    Navigate into your new site’s directory. 
 
     ```shell
-    cd my-hello-world-starter/
+       cd my-hello-world-starter/
+    ```
+
+    Next run npm install, this will install the neccessary components within the project.
+
+    ```shell
+    npm install
+    ```
+
+    You can now start up your project and view it locally
+
+    ```shell
+ 
     gatsby develop
     ```
 
